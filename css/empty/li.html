@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Remove Space Between li Elements</title>
+    <style>
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: #ccc;
+        font-size: 16px;
+      }
+      .fz-0 {
+        font-size: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Remove Space Between li Elements</h1>
+    <p>
+      The space between <code>li</code> elements can be removed by setting the
+      parent element's <code>font-size</code> property to <code>0</code>.
+    </p>
+    有空格
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    无空格
+    <ul class="fz-0">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </body>
+</html>

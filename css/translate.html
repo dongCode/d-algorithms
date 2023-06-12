@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Translate Example</title>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        margin: 50px;
+        transition: transform 0.5s;
+      }
+
+      .box:hover {
+        transform: translate(50px, 0);
+      }
+    </style>
+  </head>
+  <body>
+    使用 translate 来改变元素位置的主要原因是它不会影响元素的盒模型，而且性能更好。相比之下，使用定位属性（如 position、top、left、right、bottom）来改变元素位置会影响元素的盒模型，因此可能会导致布局问题和性能问题。
+
+使用 translate 来移动元素不会影响布局，因为它只是改变了元素的位置，而不改变元素在布局中占据的空间。此外，使用 translate 还可以使用硬件加速，这样可以提高动画和滚动的性能，因为它可以利用 GPU 来执行动画操作。
+    <h1>Translate Example</h1>
+    <p>The <code>translate</code> function can be used to move an element without affecting its layout or performance.</p>
+    <div class="box"></div>
+  </body>
+</html>
